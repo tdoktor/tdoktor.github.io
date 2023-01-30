@@ -6,8 +6,12 @@ body {
 }
 
 h1, h2, h3 {
-  font-size: 5vw;
+  font-size: clamp(30px, 10vw, 70px);
   color: #FFFFFF;
+}
+
+p {
+  font-size: clamp(12pt, 3vw, 20pt);;
 }
 
 nav {
