@@ -6,7 +6,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-size: 7vw;
+  font-size: 5vw;
   color: #FFFFFF;
 }
 
@@ -29,7 +29,7 @@ nav img {
 }
 
 main {
-  padding-top: 10vw;
+  padding-top: 5vw;
 }
 
 #pill {
