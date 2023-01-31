@@ -1,61 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: #000000;
-  font-family: "Courier New", monospace;
+  font-family: "Lucida", monospace;
   color: #FFFFFF;
-  padding: 5%;
-}
-
-h1, h2, h3 {
-  font-size: clamp(30px, 10vw, 70px);
-}
-
-p {
-  font-size: clamp(12pt, 3vw, 20pt);
 }
 
 nav {
   display: flex;
-  justify-content: left;
-  align-items: center; /* center items vertically */
-  position: fixed;
-  top: 3%;
-  left: 0;
-  right: 0;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  padding-left: 0rem;
 }
 
 nav a {
-  margin: 0 10px;
+  font-size: 18pt;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition-property: background-color, font-weight, color;
+  transition-duration:2s;
+  transition-timing-function: ease;
 }
 
+nav a:hover{
+  color: rgba(255, 255, 255, 1.0);
+  font-weight: bold;
+  background-color: mediumpurple;
+  transition-duration: 0.5s; 
+}
 
-nav img {
-  height: 60px; /* set the desired height */
-  width: auto; /* maintain aspect ratio */
-  max-width: 100%; /* limit width to the parent container */
-  display: block; /* make the image a block-level element */
+nav #current {
+  color: rgba(255, 255, 255, 1.0);
+  font-weight: bold;
+}
+
+.navbar-brand
+{
+    position: relative;
+    background: url(cd-icon.png);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#title {
+  color: mediumpurple;
+  font-weight: bolder;
+  font-size: 40pt;
 }
 
 main {
-  padding-top: 30px;
-}
-
-#pill {
-  font-size: clamp(12pt, 3vw, 20pt);
-  font-weight: bold;
-  color: white;
-  padding: 0px 30px;
-  display: inline-block;
-  border-radius: 0%;
-  border: 5px solid white;
-  text-decoration: none;
-  line-height: 30px;
-  transition: padding 0.5s ease;
-}
-
-#pill:hover {
-  padding: 1% 5%;
-}
-
-#separate {
-  padding: 3vw 1vw;
+  margin: 1rem 1rem;
 }
