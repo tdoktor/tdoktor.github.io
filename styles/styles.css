@@ -9,6 +9,10 @@ body {
   color: #FFFFFF;
 }
 
+p{
+  max-width: 1000px;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -18,6 +22,8 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
+  font-size: 18pt;
+  
 }
 
 nav li {
@@ -25,19 +31,15 @@ nav li {
 }
 
 nav a {
-  font-size: 18pt;
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
-  transition-property: background-color, font-weight, color;
-  transition-duration:2s;
-  transition-timing-function: ease;
 }
 
 nav a:hover{
   color: rgba(255, 255, 255, 1.0);
   font-weight: bold;
   background-color: mediumpurple;
-  transition-duration: 0.5s; 
+/*  transition-duration: 0.5s; */
 }
 
 nav #current {
