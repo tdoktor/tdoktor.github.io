@@ -16,15 +16,17 @@ body {
 p{
   max-width: 1000px;
   font-weight: 450;
-  font-size: 14pt;
+  font-size: 12pt;
 }
 
-a {
-  color: rgba(255, 255, 255, 0.5);
+#link {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 1);
+  line-height: 200%;
   text-decoration: none;
 }
 
-a:hover{
+#link:hover{
   color: rgba(255, 255, 255, 1.0);
   background-color: var(--main-purple);
 }
@@ -51,14 +53,14 @@ nav a {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   font-weight: 400;
-  transition: font-weight 1s ease;
+/*  transition: font-weight 1s ease;*/
 }
 
 nav a:hover{
   color: rgba(255, 255, 255, 1.0);
   font-weight: 700;
   background-color: var(--main-purple);
-  transition-duration: 0.0s; 
+/*  transition-duration: 0.0s; */
 }
 
 nav #current {
@@ -83,8 +85,26 @@ nav #current {
   font-size: 40pt;
 }
 
+#blog-title {
+  color: var(--main-purple);
+  font-weight: bolder;
+  font-size: clamp(20pt , 8vw , 40pt);
+}
+
+#blog-date {
+  font-size: clamp(10pt , 5vw , 20pt);
+  font-weight: 400;
+  color: rgba(164, 130, 250, 0.5);
+}
+
+#boxed {
+  padding: 5px;
+  border-bottom: 2px solid var(--main-purple);
+/*  border-right: 2px solid white;*/
+}
+
 main {
-  margin: 5vw 5vw;
+  margin: 50px 5vw;
 }
 
 
