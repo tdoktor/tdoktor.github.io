@@ -1,3 +1,6 @@
+:root {
+  --main-purple: rgb(164, 130, 250);
+}
 
 * {
   padding: 0;
@@ -17,16 +20,13 @@ p{
 }
 
 a {
-   color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
-  transition: font-weight 1s ease; 
 }
 
 a:hover{
   color: rgba(255, 255, 255, 1.0);
-  font-weight: 700;
-  background-color: mediumpurple;
-  transition-duration: 0.5s; 
+  background-color: var(--main-purple);
 }
 
 nav {
@@ -50,15 +50,15 @@ nav li {
 nav a {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
-  font-weight: 200;
+  font-weight: 400;
   transition: font-weight 1s ease;
 }
 
 nav a:hover{
   color: rgba(255, 255, 255, 1.0);
   font-weight: 700;
-  background-color: mediumpurple;
-  transition-duration: 0.5s; 
+  background-color: var(--main-purple);
+  transition-duration: 0.0s; 
 }
 
 nav #current {
@@ -78,7 +78,7 @@ nav #current {
 }
 
 #title {
-  color: mediumpurple;
+  color: var(--main-purple);
   font-weight: bolder;
   font-size: 40pt;
 }
