@@ -40,15 +40,13 @@ p{
 nav {
   display: flex;
   align-items: center;
-/*  background-color: #EF4630;*/
   padding: 1rem 1rem;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  font-size: 18pt;
-
+  font-size: 15pt;
 }
 
 nav li {
