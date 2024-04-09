@@ -6,53 +6,44 @@
 	<script src="script.js"></script>
 	<meta name="viewport" content="width=device-width, initial scale=1">
 </head>
-<script>
-zoomed = false;
-function zoom() {
-	if(!zoomed){
-		document.getElementById("imagedefault").src="./images/front-image_zoom.jpg";
-		zoomed = true;
-	}else{
-		document.getElementById("imagedefault").src="./images/front-image.jpg";
-		zoomed = false;
-	}
-}
-</script>
+
 <body>
-
-<nav>
 	
-	<ul>
-		[
-		<li><a href="./index" id="current">home_</a></li>
-		<li><a href="./links">links_</a></li>
-		<li><a href="./blog">blog_</a></li>
-		<li><a href="./portfolio">portfolio_</a></li>
-		]
-	</ul>
+	<nav>
+		
+		<ul>
+			[
+			<li><a href="./index" id="current">home_</a></li>
+			<li><a href="./links">links_</a></li>
+			<li><a href="./blog">blog_</a></li>
+			<li><a href="./portfolio">portfolio_</a></li>
+			]
+		</ul>
+		
+	</nav>
 	
-</nav>
-
-<main>
-	<h1 id="title" >hello_</h1>
-	<h4>welcome to tillmanns-cyber.space</h4>
-	<br>
-	<img src="./images/front-image.jpg" id="imagedefault" onclick="zoom();"/>
+	<main>
+		<h1 id="title" >hello_</h1>
+		<h4>welcome to tillmanns-cyber.space</h4>
+		<br>
+		<img src="./images/front-image.jpg" id="imagedefault" onclick="zoom();"/>
+		<p><a id="link" onclick="switchMode();">SWITCH MODE</a></p>
+		
+	</main>
 	
-</main>
-
 	<span id="fc-40639"></span>
 	<script>
-	var fcr = Math.floor(Math.random()*99999999999);
-	var _fcc = _fcc || []; _fcc.push(["40639"]); _fcc.push(["trans"]);(function(){
-	var fc = document.createElement("script");fc.async = true;
-	fc.src = "https://www.fastcounter.de/fcount.php?rnd=" + fcr;
-	var sc = document.getElementById("fc-40639");
-	sc.appendChild(fc);
-	})();</script>
+		var fcr = Math.floor(Math.random()*99999999999);
+		var _fcc = _fcc || []; _fcc.push(["40639"]); _fcc.push(["trans"]);(function(){
+			var fc = document.createElement("script");fc.async = true;
+			fc.src = "https://www.fastcounter.de/fcount.php?rnd=" + fcr;
+			var sc = document.getElementById("fc-40639");
+			sc.appendChild(fc);
+		})();</script>
 	<noscript>
-	<a href="https://www.fastcounter.de/stats/40639/dashboard" rel="nofollow" style="display: none;" target="_blank" title="Kostenloser Besucherz&auml;hler"><img src="https://www.fastcounter.de/fcounter.php?id=40639;" alt="Kostenloser Besucherz&auml;hler" title="Kostenloser Besucherz&auml;hler"></a>
+		<a href="https://www.fastcounter.de/stats/40639/dashboard" rel="nofollow" style="display: none;" target="_blank" title="Kostenloser Besucherz&auml;hler"><img src="https://www.fastcounter.de/fcounter.php?id=40639;" alt="Kostenloser Besucherz&auml;hler" title="Kostenloser Besucherz&auml;hler"></a>
 	</noscript>
-
+	
 </body>
 </html>
+<script src="theme.js"></script>

@@ -1,6 +1,8 @@
 :root {
-  --main-purple: rgb(164, 130, 250);
+
 }
+
+
 
 * {
   padding: 0;
@@ -8,9 +10,32 @@
 }
 
 body {
-  background-color: #000000;
   font-family: 'Fira Code',Courier New, monospace;
-  color: #FFFFFF;
+  color: var(--secondary);
+}
+
+body.darkmode{
+  --main-purple: rgb(164, 130, 250);
+  --main-purple-transparent: rgba(164, 130, 250, 0.5);
+  --primary: rgb(0,0,0);
+  --secondary: rgb(255,255,255);
+  --nav-default: rgba(255, 255, 255, 0.7);
+  --nav-hover: rgba(255, 255, 255, 1.0);
+  background-color: var(--primary);
+}
+
+body.lightmode{
+  --main-purple: rgb(164, 130, 250);
+  --main-purple-transparent: rgba(164, 130, 250, 0.5);
+  --primary: rgb(255, 255, 255);
+  --secondary: rgb(0, 0, 0);
+  --nav-default: rgba(0, 0, 0, 0.7);
+  --nav-hover: rgb(0, 0, 0);
+}
+
+body.cursed{
+  color:rgba(0, 0, 0, 0);
+  background-image: url(../images/front-image_zoom.jpg);
 }
 
 p{
@@ -20,8 +45,8 @@ p{
 }
 
 #link {
-  background-color: rgb(255, 255, 255);
-  color: rgba(0, 0, 0, 1);
+  background-color: var(--secondary);
+  color: var(--primary);
   line-height: 200%;
   font-weight: 450;
   text-decoration: none;
@@ -33,7 +58,7 @@ p{
 }
 
 #link:hover{
-  color: rgba(255, 255, 255, 1.0);
+  color: var(--secondary);
   background-color: var(--main-purple);
 }
 
@@ -54,21 +79,21 @@ nav li {
 }
 
 nav a {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--nav-default);
   text-decoration: none;
   font-weight: 400;
 /*  transition: font-weight 1s ease;*/
 }
 
 nav a:hover{
-  color: rgba(255, 255, 255, 1.0);
+  color: var(--nav-hover);
   font-weight: 700;
   background-color: var(--main-purple);
 /*  transition-duration: 0.0s; */
 }
 
 nav #current {
-  color: rgba(255, 255, 255, 1.0);
+  color: var(--secondary);
   font-weight: bold;
 }
 
@@ -99,7 +124,7 @@ nav #current {
 #blog-date {
   font-size: clamp(10pt , 5vw , 20pt);
   font-weight: 400;
-  color: rgba(164, 130, 250, 0.5);
+  color: var(--main-purple-transparent);
 }
 
 #boxed {
@@ -116,6 +141,8 @@ main {
     width: 90%;
     max-width: 500px;
 }
+
+
 
 font-face {
   font-family: 'Fira Code';
