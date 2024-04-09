@@ -5,43 +5,34 @@
 <title>tillmanns-cyber.space BLOGRSS</title>
 <description>blog feed</description>
 <language>en-us</language>
-<link>http://tillmanns-cyber.space/rss.xml</link>
+<link>https://tillmanns-cyber.space/rss.xml</link>
 <atom:link href="http://tillmanns-cyber.space/rss.xml" rel="self" type="application/rss+xml" />
 
 <!-- LB -->
 
 <item>
-<title>	makrodosis clip (Updated)</title>
-<guid>https://tillmanns-cyber.space/entries/20230608.html#240409210928</guid>
-<link>https://tillmanns-cyber.space/entries/20230608.html</link>
-<pubDate>Tue, 09 Apr 2024 21:09:36 +0200</pubDate>
-<description><![CDATA[title change again
+<title>	[R]ichtig [S]imple [S]yndizierung</title>
+<guid>https://tillmanns-cyber.space/entries/20240409.html</guid>
+<link>https://tillmanns-cyber.space/entries/20240409.html</link>
+<pubDate>Tue, 09 Apr 2024 21:35:21 +0200</pubDate>
+<description><![CDATA[
+
+
+
+<main>
+	<h1 id="blog-title" >[R]ichtig [S]imple [S]yndizierung</h1>
+	<h4>rss an</h4>
+	<p id="blog-date">[20240409]</p>
+	<p>hallo. alle blogeinträge ab heute auch im RSS feed.</br><a id="link" href="../rss.xml">https://tillmanns-cyber.space/rss.xml</a></p>
+</main>
+
 ]]></description>
 </item>
 
 
 <item>
-<title>	scroll go bzzz (Updated)</title>
-<guid>https://tillmanns-cyber.space/entries/20230202.html#240409210916</guid>
-<link>https://tillmanns-cyber.space/entries/20230202.html</link>
-<pubDate>Tue, 09 Apr 2024 21:09:20 +0200</pubDate>
-<description><![CDATA[new title
-]]></description>
-</item>
-
-
-<item>
-<title>	fira code (Updated)</title>
-<guid>https://tillmanns-cyber.space/entries/20230201.html#240409210900</guid>
-<link>https://tillmanns-cyber.space/entries/20230201.html</link>
-<pubDate>Tue, 09 Apr 2024 21:09:07 +0200</pubDate>
-<description><![CDATA[changed the title
-]]></description>
-</item>
-
-
-<item>
-<title>	c y b e r</title>
+<title>	makrodosis clip
+</title>
 <guid>https://tillmanns-cyber.space/entries/20230608.html</guid>
 <link>https://tillmanns-cyber.space/entries/20230608.html</link>
 <pubDate>Tue, 09 Apr 2024 21:02:25 +0200</pubDate>
@@ -67,7 +58,8 @@
 
 
 <item>
-<title>	c y b e r</title>
+<title>	scroll go bzzz
+</title>
 <guid>https://tillmanns-cyber.space/entries/20230202.html</guid>
 <link>https://tillmanns-cyber.space/entries/20230202.html</link>
 <pubDate>Tue, 09 Apr 2024 21:02:11 +0200</pubDate>
@@ -96,7 +88,7 @@
 
 
 <item>
-<title>	c y b e r
+<title> fira code
 </title>
 <guid>https://tillmanns-cyber.space/entries/20230201.html</guid>
 <link>https://tillmanns-cyber.space/entries/20230201.html</link>
