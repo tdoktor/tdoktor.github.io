@@ -5,7 +5,7 @@
 	exit 1
 
 # You will want to change these variables to your needs.
-website="https://tillmanns-cyber.space/entries"
+website="https://tillmanns-cyber.space"
 rssfile="rss.xml"
 
 # In order to cleanly use sed on a multi-line file, we have to use `tr` to
