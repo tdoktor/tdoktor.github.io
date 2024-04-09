@@ -5,7 +5,7 @@
 <title>tillmanns-cyber.space BLOGRSS</title>
 <description>blog feed</description>
 <language>en-us</language>
-<link>https://tillmanns-cyber.space/rss.xml</link>
+<link>https://tillmanns-cyber.space</link>
 <atom:link href="http://tillmanns-cyber.space/rss.xml" rel="self" type="application/rss+xml" />
 
 <!-- LB -->
