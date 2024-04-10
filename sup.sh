@@ -19,7 +19,9 @@ replchar='^'
 # single byte character that isn't in the page like ~ or something.
 
 link="$website/$1"
-title="$(sed -n 's/<title>\(.*\)<\/title>/\1/Ip' "$1")"
+titleh1="$(sed -n 's/<h1 id="blog-title">\(.*\)<\/h1>/\1/Ip' "$1")"
+titledate="$(sed -n 's/<h2 id="blog-date">\(.*\)<\/h2>/\1/Ip' "$1")"
+title="$titleh1 $titledate"
 
 # Check and see if this page has already been added to the RSS feed.
 if grep -q "<guid.*>$link</guid>" "$rssfile"; then
@@ -39,10 +41,10 @@ else
 	guid=$link
 	# Get the page body content, excluding the nav and footer.
 	content="$(tr '\n' $replchar < "$1" | sed "
-	s/.*<body>//
-	s/<footer>.*<\/footer>//
-	s/<nav>.*<\/nav>//
-	s/<\/body>.*//
+	s/.*<main>//
+	s/<h1 id=\"blog-title\">.*<\/h1>//
+	s/<h2 id=\"blog-date\">.*<\/h2>//
+	s/<\/main>.*//
 	" | tr -s $replchar '\n')"
 fi
 
