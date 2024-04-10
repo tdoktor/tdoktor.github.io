@@ -2,8 +2,6 @@
 
 }
 
-
-
 * {
   padding: 0;
   margin: 0;
@@ -34,7 +32,7 @@ body.lightmode{
 }
 
 body.cursed{
-  color:rgba(0, 0, 0, 0);
+  background-color:rgba(0, 0, 0, 0);
   background-image: url(../images/front-image_zoom.jpg);
 }
 

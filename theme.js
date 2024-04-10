@@ -1,10 +1,20 @@
 const currentTheme = localStorage.getItem("theme");
 const currentCurseMode = localStorage.getItem("curseMode");
+let themeSwitcherExists = false;
+let themeSwitcher = null;
+
+if(document.body.getElementsByClassName("theme-switcher").length < 1){
+  themeSwitcherExists = false;
+} else {
+  themeSwitcherExists = true;
+  themeSwitcher = document.body.getElementsByClassName("theme-switcher")[0];
+}
+
 
 if (currentTheme == "light") {
-    document.body.classList.add("lightmode");
+    setLight();
 } else {
-    document.body.classList.add("darkmode");
+    setDark();
 }
 
 if(currentCurseMode === 'curseOn'){
@@ -17,16 +27,24 @@ function switchMode() {
   localStorage.setItem("curseMode", "curseOff");
 
   if (currentTheme == "light") {
-    document.body.classList.remove("lightmode");
-    document.body.classList.add("darkmode");
-    localStorage.setItem("theme", "dark");
+    setDark();
   } else if(currentTheme == "dark") {
-    document.body.classList.add("lightmode");
-    document.body.classList.remove("darkmode");
-    localStorage.setItem("theme", "light");
+    setLight();
   } else {
-    localStorage.setItem("theme", "light");
-    document.body.classList.add("lightmode");
-    document.body.classList.remove("darkmode");
+    setDark();
   }
+}
+
+function setLight(){
+  document.body.classList.add("lightmode");
+  if(themeSwitcherExists == true){themeSwitcher.innerHTML = 'DARK'}
+  document.body.classList.remove("darkmode");
+  localStorage.setItem("theme", "light");
+}
+
+function setDark(){
+  document.body.classList.add("darkmode");
+  if(themeSwitcherExists == true){themeSwitcher.innerHTML = 'LIGHT'}
+  document.body.classList.remove("lightmode");
+  localStorage.setItem("theme", "dark"); 
 }
