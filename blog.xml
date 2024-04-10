@@ -30,26 +30,6 @@
 </item>
 
 <item>
-<title>	r_ichtig s_imple s_yndizierung
- 	[20240409]
-</title>
-<guid>https://tillmanns-cyber.space/entries/20240409.html</guid>
-<link>https://tillmanns-cyber.space/entries/20240409.html</link>
-<pubDate>Wed, 10 Apr 2024 17:41:45 +0200</pubDate>
-<description><![CDATA[
-	
-	
-	<h4>[rss an]</h4>
-	<br>
-	<p>hallo. alle blogeinträge ab heute auch im RSS feed. </br><br><a id="link" href="../blog.xml">https://tillmanns-cyber.space/blog.xml</a>
-	</br></br>
-	RSS updater-skript und rss.xml skeleton von <a id="link" href="https://github.com/lukesmithxyz/lb">github/lukesmithxyz/lb</a>.
-	</p>
-]]></description>
-</item>
-
-
-<item>
 <title>	makrodosis
  	[20230608]
 </title>
