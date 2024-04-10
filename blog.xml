@@ -22,7 +22,7 @@
 	
 	<h4>[rss an]</h4>
 	<br>
-	<p>hallo. alle blogeinträge ab heute auch im RSS feed. </br><br><a id="link" href="../rss.xml">https://tillmanns-cyber.space/rss.xml</a>
+	<p>hallo. alle blogeinträge ab heute auch im RSS feed. </br><br><a id="link" href="../blog.xml">https://tillmanns-cyber.space/blog.xml</a>
 	</br></br>
 	RSS updater-skript und rss.xml skeleton von <a id="link" href="https://github.com/lukesmithxyz/lb">github/lukesmithxyz/lb</a>.
 	</p>
