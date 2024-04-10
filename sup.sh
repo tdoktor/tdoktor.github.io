@@ -6,8 +6,8 @@
 
 # You will want to change these variables to your needs.
 website="https://tillmanns-cyber.space"
-rssfile="rss.xml"
-
+rssfile="blog.xml"
+htmlfile="blog.html" 
 # In order to cleanly use sed on a multi-line file, we have to use `tr` to
 # convert newlines to a set character, then run sed, then reconvert the
 # character. Unfortunately, due to a current issue in GNU's tr, characters of
@@ -22,6 +22,7 @@ link="$website/$1"
 titleh1="$(sed -n 's/<h1 id="blog-title">\(.*\)<\/h1>/\1/Ip' "$1")"
 titledate="$(sed -n 's/<h2 id="blog-date">\(.*\)<\/h2>/\1/Ip' "$1")"
 title="$titleh1 $titledate"
+tagline="$(sed -n 's/<h4>\[\(.*\)\]<\/h4>/\1/Ip' "$1")"
 
 # Check and see if this page has already been added to the RSS feed.
 if grep -q "<guid.*>$link</guid>" "$rssfile"; then
@@ -69,3 +70,15 @@ echo "
 " > "$temp"
 
 sed -i "/<!-- LB -->/r $temp" "$rssfile"
+
+# temp="$(mktemp)";
+# trap 'rm -f "$temp"' 0 1 2 3 15	# Delete temp file after script termination.
+# echo "
+# 	<div id="boxed">
+# 		<h2><a href="./$1" id="link">$titleh1</a></h2>
+# 		<p>$tagline</p>
+# 	</div>
+# 	<br>
+# " > "$temp"
+
+# sed -i "/<!-- NEXT -->/r $temp" "$htmlfile"
