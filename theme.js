@@ -37,14 +37,14 @@ function switchMode() {
 
 function setLight(){
   document.body.classList.add("lightmode");
-  if(themeSwitcherExists == true){themeSwitcher.innerHTML = 'DARK'}
+  if(themeSwitcherExists == true){themeSwitcher.innerHTML = '[dark | LIGHT]'}
   document.body.classList.remove("darkmode");
   localStorage.setItem("theme", "light");
 }
 
 function setDark(){
   document.body.classList.add("darkmode");
-  if(themeSwitcherExists == true){themeSwitcher.innerHTML = 'LIGHT'}
+  if(themeSwitcherExists == true){themeSwitcher.innerHTML = '[DARK | light]'}
   document.body.classList.remove("lightmode");
   localStorage.setItem("theme", "dark"); 
 }
