@@ -29,6 +29,26 @@
 	<a href="https://mastodon.social/@tdoktor" id="link">mastodon</a>
 	</br>
 	<a href="https://www.github.com/tdoktor" id="link">github</a>
+	<br><br><br><br>
+	<h4>sagt hallo</h4>
+	<br>
+	<form method="POST" id="form">
+		<input type="hidden" name="access_key" value="9268b16a-6702-43f7-bc6c-c59fcab669fc">
+		
+		<p>name (opt.)_</p>
+		<input type="text" name="name"><br>
+		<p>email (opt.)_</p>
+		<input type="email" name="email" placeholder="" ><br>
+		<p>message_</p>
+		<textarea name="message" required></textarea><br>
+		<div class="h-captcha" data-captcha="true"></div>
+
+		<button type="submit">send_</button>
+		<br><br>
+		<div id="result"></div>
+	
+	</form>
+	<script src="contact_form.js"></script>
 </main>
 
 </body>
