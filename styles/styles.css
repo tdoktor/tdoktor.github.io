@@ -6,12 +6,14 @@
 body {
   font-family: 'Fira Code','Courier New', monospace;
   color: var(--secondary);
+  --st: 0px;
 }
 
 body.darkmode{
   --main-purple: rgb(164, 130, 250);
   --main-purple-transparent: rgba(164, 130, 250, 0.5);
   --primary: rgb(0,0,0);
+  --primary-fullscreen: rgba(0,0,0,0.8);
   --secondary: rgb(255,255,255);
   --nav-default: rgba(255, 255, 255, 0.7);
   --nav-hover: rgba(255, 255, 255, 1.0);
@@ -22,6 +24,7 @@ body.lightmode{
   --main-purple: rgb(164, 130, 250);
   --main-purple-transparent: rgba(164, 130, 250, 0.5);
   --primary: rgb(255, 255, 255);
+  --primary-fullscreen: rgba(255, 255, 255, 0.8);
   --secondary: rgb(0, 0, 0);
   --nav-default: rgba(0, 0, 0, 0.7);
   --nav-hover: rgb(0, 0, 0);
@@ -36,6 +39,11 @@ p{
   max-width: 1000px;
   font-weight: 400;
   font-size: 12pt;
+}
+
+img {
+  -webkit-transform: translate3d(0, 0, 0); /* Forces GPU rendering */
+  -webkit-backface-visibility: hidden; /* Improves rendering quality */
 }
 
 #link {
@@ -202,10 +210,12 @@ button{
 }
 
 .image-wrapper img {
+  image-rendering: crisp-edges;
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: scale-down; 
+  object-fit: cover;
+  object-position: top; 
 }
 
 .grid-item p {
@@ -248,7 +258,7 @@ button{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--primary);
+  background-color: rgba(0,0,0,0.8);
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -267,7 +277,7 @@ button{
   text-align: center;
   font-size: 14px;
   font-weight: 500;
-  color: var(--secondary);
+  color: white;
   font-family: 'Fira Code', monospace;
   line-height: 1.4;
 }

@@ -1,4 +1,3 @@
-// Get elements
 const thumbnails = document.querySelectorAll('.grid-item img');
 const overlay = document.getElementById('fullscreen-overlay');
 const fullscreenImage = document.getElementById('fullscreen-image');
