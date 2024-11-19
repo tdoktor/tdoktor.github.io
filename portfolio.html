@@ -6,7 +6,7 @@
 	<script src="script.js"></script>
 	<meta name="viewport" content="width=device-width, initial scale=1">
 	</head>
-	<style>
+	<!-- <style>
 		.row {
 			max-width: 100%;
 			display: flex;
@@ -31,7 +31,7 @@
 			padding: 0px 0px;
 			}
 		}
-	</style>
+	</style> -->
 
 	<body>
 		<nav>
@@ -47,7 +47,7 @@
 
 		<main>
 			<h1 id="blog-title" >portfolio_</h1>
-			<div class="row">
+			<!-- <div class="row">
 				<div class="column">
 					<img src="./images/portfolio/IMG_1.png">
 					<img src="./images/portfolio/IMG_ 2.jpg">
@@ -67,8 +67,106 @@
 					<img src="./images/portfolio/IMG_13.png">
 					<img src="./images/portfolio/IMG_14.jpg">
 				</div>
-			</div>
+			</div> -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="image-wrapper">
+                    <img src="./images/portfolio/IMG_1.png" alt="image_name_1" class="thumbnail">
+                </div>
+                <p>IMG_1.png</p>
+            </div>
+            <div class="grid-item">
+                <div class="image-wrapper">
+                    <img src="./images/portfolio/IMG_2.jpg" alt="image_name_2" class="thumbnail">
+                </div>
+                <p>IMG_2.jpg</p>
+            </div>
+            <div class="grid-item">
+                <div class="image-wrapper">
+                    <img src="./images/portfolio/IMG_3.jpg" alt="image_name_3" class="thumbnail">
+                </div>
+                <p>IMG_3.jpg</p>
+            </div>
+            <div class="grid-item">
+                <div class="image-wrapper">
+                    <img src="./images/portfolio/IMG_4.png" alt="image_name_4" class="thumbnail">
+                </div>
+                <p>IMG_4.png</p>
+            </div>
+            <div class="grid-item">
+                <div class="image-wrapper">
+                    <img src="./images/portfolio/IMG_5.png" alt="image_name_5" class="thumbnail">
+                </div>
+                <p>IMG_5.png</p>
+            </div>
+
+			<div class="grid-item">
+                <div class="image-wrapper">
+                    <img src="./images/portfolio/IMG_6.png" alt="image_name_5" class="thumbnail">
+                </div>
+                <p>IMG_6.png</p>
+            </div>
+			<div class="grid-item">
+                <div class="image-wrapper">
+                    <img src="./images/portfolio/IMG_7.png" alt="image_name_5" class="thumbnail">
+                </div>
+                <p>IMG_7.png</p>
+            </div>
+			<div class="grid-item">
+                <div class="image-wrapper">
+                    <img src="./images/portfolio/IMG_8.png" alt="image_name_5" class="thumbnail">
+                </div>
+                <p>IMG_8.png</p>
+            </div>
+			<div class="grid-item">
+                <div class="image-wrapper">
+                    <img src="./images/portfolio/IMG_9.png" alt="image_name_5" class="thumbnail">
+                </div>
+                <p>IMG_9.png</p>
+            </div>
+			<div class="grid-item">
+                <div class="image-wrapper">
+                    <img src="./images/portfolio/IMG_10.png" alt="image_name_5" class="thumbnail">
+                </div>
+                <p>IMG_10.png</p>
+            </div>
+			<div class="grid-item">
+                <div class="image-wrapper">
+                    <img src="./images/portfolio/IMG_11.jpg" alt="image_name_5" class="thumbnail">
+                </div>
+                <p>IMG_11.jpg</p>
+            </div>
+			<div class="grid-item">
+                <div class="image-wrapper">
+                    <img src="./images/portfolio/IMG_12.png" alt="image_name_5" class="thumbnail">
+                </div>
+                <p>IMG_12.png</p>
+            </div>
+			<div class="grid-item">
+                <div class="image-wrapper">
+                    <img src="./images/portfolio/IMG_13.png" alt="image_name_5" class="thumbnail">
+                </div>
+                <p>IMG_13.png</p>
+            </div>
+			<div class="grid-item">
+                <div class="image-wrapper">
+                    <img src="./images/portfolio/IMG_14.jpg" alt="image_name_5" class="thumbnail">
+                </div>
+                <p>IMG_14.jpg</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Fullscreen Image Overlay -->
+    <div id="fullscreen-overlay" class="fullscreen-overlay">
+        <img id="fullscreen-image" src="" alt="Fullscreen Image">
+        <div id="file-name"></div>
+    </div>
+
+			
 		</main>
 	</body>
 </html>
 <script src="theme.js"></script>
+<script src="fullscreen.js"></script>
