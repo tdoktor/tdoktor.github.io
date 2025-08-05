@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
-<title>tillmanns-cyber.space BLOGRSS</title>
+<title>tillmanndoktor.net BLOGRSS</title>
 <description>blog feed</description>
 <language>en-us</language>
-<link>https://tillmanns-cyber.space</link>
-<atom:link href="http://tillmanns-cyber.space/blog.xml" rel="self" type="application/rss+xml" />
+<link>https://tillmanndoktor.net</link>
+<atom:link href="http://tillmanndoktor.net/blog.xml" rel="self" type="application/rss+xml" />
 
 <!-- LB -->
 
@@ -14,15 +14,15 @@
 <title>	r_ichtig s_imple s_yndizierung
  	[20240409]
 </title>
-<guid>https://tillmanns-cyber.space/entries/testhtml.html</guid>
-<link>https://tillmanns-cyber.space/entries/testhtml.html</link>
+<guid>https://tillmanndoktor.net/entries/testhtml.html</guid>
+<link>https://tillmanndoktor.net/entries/testhtml.html</link>
 <pubDate>Wed, 10 Apr 2024 18:06:19 +0200</pubDate>
 <description><![CDATA[
 	
 	
 	<h4>[rss an]</h4>
 	<br>
-	<p>hallo. alle blogeinträge ab heute auch im RSS feed. </br><br><a id="link" href="../blog.xml">https://tillmanns-cyber.space/blog.xml</a>
+	<p>hallo. alle blogeinträge ab heute auch im RSS feed. </br><br><a id="link" href="../blog.xml">https://tillmanndoktor.net/blog.xml</a>
 	</br></br>
 	RSS updater-skript und rss.xml skeleton von <a id="link" href="https://github.com/lukesmithxyz/lb">github/lukesmithxyz/lb</a>.
 	</p>
@@ -33,8 +33,8 @@
 <title>	makrodosis
  	[20230608]
 </title>
-<guid>https://tillmanns-cyber.space/entries/20230608.html</guid>
-<link>https://tillmanns-cyber.space/entries/20230608.html</link>
+<guid>https://tillmanndoktor.net/entries/20230608.html</guid>
+<link>https://tillmanndoktor.net/entries/20230608.html</link>
 <pubDate>Wed, 10 Apr 2024 17:41:42 +0200</pubDate>
 <description><![CDATA[
 	
@@ -55,8 +55,8 @@
 <title>	scroll go bzzz
  	[20230202]
 </title>
-<guid>https://tillmanns-cyber.space/entries/20230202.html</guid>
-<link>https://tillmanns-cyber.space/entries/20230202.html</link>
+<guid>https://tillmanndoktor.net/entries/20230202.html</guid>
+<link>https://tillmanndoktor.net/entries/20230202.html</link>
 <pubDate>Wed, 10 Apr 2024 17:41:38 +0200</pubDate>
 <description><![CDATA[
 	
@@ -80,8 +80,8 @@
 <title>	fira code 
  	[20230201]
 </title>
-<guid>https://tillmanns-cyber.space/entries/20230201.html</guid>
-<link>https://tillmanns-cyber.space/entries/20230201.html</link>
+<guid>https://tillmanndoktor.net/entries/20230201.html</guid>
+<link>https://tillmanndoktor.net/entries/20230201.html</link>
 <pubDate>Wed, 10 Apr 2024 17:41:36 +0200</pubDate>
 <description><![CDATA[
 	
@@ -95,4 +95,3 @@
 
 </channel>
 </rss>
-
