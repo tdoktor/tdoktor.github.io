@@ -11,10 +11,10 @@ if(document.body.getElementsByClassName("theme-switcher").length < 1){
 }
 
 
-if (currentTheme == "light") {
-    setLight();
-} else {
+if (currentTheme == "dark") {
     setDark();
+} else {
+    setLight();
 }
 
 if(currentCurseMode === 'curseOn'){
@@ -31,7 +31,7 @@ function switchMode() {
   } else if(currentTheme == "dark") {
     setLight();
   } else {
-    setDark();
+    setLight();
   }
 }
 

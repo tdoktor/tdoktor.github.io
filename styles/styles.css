@@ -9,9 +9,11 @@ body {
   --st: 0px;
 }
 
+/* PURPLE rgb(164, 130, 250) */
+
 body.darkmode{
-  --main-purple: rgb(164, 130, 250);
-  --main-purple-transparent: rgba(164, 130, 250, 0.5);
+  --accent-color: rgb(255, 119, 0);
+  --accent-color-transparent: rgba(255, 119, 0, 0.5);
   --primary: rgb(0,0,0);
   --primary-fullscreen: rgba(0,0,0,0.8);
   --secondary: rgb(255,255,255);
@@ -21,8 +23,8 @@ body.darkmode{
 }
 
 body.lightmode{
-  --main-purple: rgb(164, 130, 250);
-  --main-purple-transparent: rgba(164, 130, 250, 0.5);
+  --accent-color: rgb(255, 119, 0);
+  --accent-color-transparent: rgba(255, 119, 0, 0.5);
   --primary: rgb(255, 255, 255);
   --primary-fullscreen: rgba(255, 255, 255, 0.8);
   --secondary: rgb(0, 0, 0);
@@ -61,7 +63,7 @@ img {
 
 #link:hover{
   color: var(--secondary);
-  background-color: var(--main-purple);
+  background-color: var(--accent-color);
 }
 
 nav {
@@ -90,7 +92,7 @@ nav a {
 nav a:hover{
   color: var(--nav-hover);
   font-weight: 700;
-  background-color: var(--main-purple);
+  background-color: var(--accent-color);
 /*  transition-duration: 0.0s; */
 }
 
@@ -112,13 +114,15 @@ nav #current {
 
 
 #title {
-  color: var(--main-purple);
+  color: var(--accent-color);
   font-weight: bolder;
-  font-size: 40pt;
+  font-size: 120pt;
+  word-wrap: break-word;
+  text-wrap: wrap;
 }
 
 #blog-title {
-  color: var(--main-purple);
+  color: var(--accent-color);
   font-weight: bolder;
   font-size: clamp(20pt , 8vw , 40pt);
 }
@@ -126,12 +130,12 @@ nav #current {
 #blog-date {
   font-size: clamp(10pt , 5vw , 20pt);
   font-weight: 400;
-  color: var(--main-purple-transparent);
+  color: var(--accent-color-transparent);
 }
 
 #boxed {
   padding: 5px;
-  border-bottom: 2px solid var(--main-purple);
+  border-bottom: 2px solid var(--accent-color);
 /*  border-right: 2px solid white;*/
 }
 
@@ -143,7 +147,7 @@ input {
   outline-width: 0;
   margin-bottom: 10px;
   padding: 3px;
-  border: solid 3px var(--main-purple);
+  border: solid 3px var(--accent-color);
   font-family: 'Fira Code','Courier New', monospace;
   font-size: 11pt;
   font-weight: 450;
@@ -159,7 +163,7 @@ textarea{
   min-height: 60px;
   width: 300px;
   resize: vertical;
-  border: solid 3px var(--main-purple);
+  border: solid 3px var(--accent-color);
   color: var(--secondary);
   font-family: 'Fira Code','Courier New', monospace;
   font-size: 11pt;
@@ -169,7 +173,7 @@ textarea{
 
 button{
   font-family: 'Fira Code','Courier New', monospace;
-  background-color: var(--main-purple-transparent);
+  background-color: var(--accent-color-transparent);
   color: var(--secondary);
   /* line-height: 100%; */
   font-size: 12pt;
@@ -238,19 +242,25 @@ button{
 }
 
 .grid-item:hover p{
-  color: var(--main-purple);
-  /* background-color: var(--main-purple); */
+  color: var(--accent-color);
+  /* background-color: var(--accent-color); */
 }
 
 @media (max-width: 820px) {
   .grid-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  #title{
+    font-size: 80pt;
+  }
 }
 
 @media (max-width: 480px) {
   .grid-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #title{
+    font-size: 65pt;
   }
 }
 
