@@ -12,8 +12,6 @@ body {
 /* PURPLE rgb(164, 130, 250) */
 
 body.darkmode{
-  --accent-color: rgb(255, 119, 0);
-  --accent-color-transparent: rgba(255, 119, 0, 0.5);
   --primary: rgb(0,0,0);
   --primary-fullscreen: rgba(0,0,0,0.8);
   --secondary: rgb(255,255,255);
@@ -30,6 +28,16 @@ body.lightmode{
   --secondary: rgb(0, 0, 0);
   --nav-default: rgba(0, 0, 0, 0.7);
   --nav-hover: rgb(0, 0, 0);
+}
+
+body.purple-mode{
+  --accent-color: rgb(164, 130, 250);
+  --accent-color-transparent: rgba(164, 130, 250, 0.5);
+}
+
+body.orange-mode{
+  --accent-color: rgb(255, 119, 0);
+  --accent-color-transparent: rgba(255, 119, 0, 0.5);
 }
 
 body.cursed{
@@ -49,6 +57,7 @@ img {
 }
 
 #link {
+  cursor: pointer;
   background-color: var(--secondary);
   color: var(--primary);
   line-height: 200%;

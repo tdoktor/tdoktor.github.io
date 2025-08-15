@@ -48,3 +48,51 @@ function setDark(){
   document.body.classList.remove("lightmode");
   localStorage.setItem("theme", "dark"); 
 }
+
+//COLOR SWITCHER
+
+const currentColor = localStorage.getItem("colortheme");
+let colorSwitcherExists = false;
+let colorSwitcher = null;
+
+if(document.body.getElementsByClassName("color-switcher").length < 1){
+  colorSwitcherExists = false;
+} else {
+  colorSwitcherExists = true;
+  colorSwitcher = document.body.getElementsByClassName("color-switcher")[0];
+}
+
+
+if (currentColor == "purple") {
+    setPurple();
+} else {
+    setOrange();
+}
+
+function switchColor() {
+  const currentColor = localStorage.getItem("colortheme");
+  if (currentColor == "orange") {
+    setPurple();
+  } else if(currentColor == "purple") {
+    setOrange();
+  } else {
+    setOrange();
+  }
+  // alert("switchcolor");
+}
+
+function setOrange(){
+  document.body.classList.add("orange-mode");
+  if(colorSwitcherExists == true){colorSwitcher.innerHTML = '[      |ORANGE]'}
+  document.body.classList.remove("purple-mode");
+  localStorage.setItem("colortheme", "orange");
+  // alert("setorange");
+}
+
+function setPurple(){
+  document.body.classList.add("purple-mode");
+  if(colorSwitcherExists == true){colorSwitcher.innerHTML = '[PURPLE|      ]'}
+  document.body.classList.remove("orange-mode");
+  localStorage.setItem("colortheme", "purple");
+  // alert("setpurple"); 
+}
