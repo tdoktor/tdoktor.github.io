@@ -185,10 +185,16 @@ button{
   background-color: var(--accent-color-transparent);
   color: var(--secondary);
   /* line-height: 100%; */
-  font-size: 12pt;
+  font-size: 24pt;
   font-weight: 450;
   border: none;
   text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--accent-color);
+    font-weight: 850;
 }
 
 #imagedefault {
