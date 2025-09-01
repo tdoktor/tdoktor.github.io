@@ -4,6 +4,13 @@
 	<link rel="icon" href="favicon.ico">
 	<link rel="stylesheet" href="./styles/styles.css">
 	<script src="script.js"></script>
+	<script>
+		function refresh(){
+			var image = new Image();
+			image.src = "./images/landingpage_gif.gif?t="+Math.random();
+			document.getElementById('imagedefault').setAttribute('src', image.src);
+		}
+	</script>
 	<meta name="viewport" content="width=device-width, initial scale=1">
 
 	<meta name="description" content="home_ tillmann doktor" />
@@ -32,10 +39,10 @@
 		<h1 id="title" >home_</h1>
 		<!-- <h2><a href="./portfolio.html" id="link" style="line-height: 1.4px;">NEW PORTFOLIO SECTION!!!</a></h2> -->
 		<br>
-		<img src="./images/front-image.jpg" id="imagedefault" onclick="zoom();"/>
+		<img src="./images/landingpage_gif.gif" id="imagedefault" onclick="refresh();"/>
 
-		<p><br><br><br>lichtschalter<br><a id="link" onclick="switchMode();" class="theme-switcher"></a></p>
-		<br>farbschalter<br><a id="link" onclick="switchColor();" class="color-switcher"></a></p>
+		<p><br><a id="link" onclick="switchMode();" class="theme-switcher"></a></p>
+		<p><br><a id="link" onclick="switchColor();" class="color-switcher"></a></p>
 		
 	</main>
 </body>
