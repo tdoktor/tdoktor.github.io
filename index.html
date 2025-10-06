@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="./styles/styles.css">
 	<script src="script.js"></script>
 	<script>
+		document.getElementById('previmg').setAttribute('content', 'https://tillmanndoktor.net/images/home_'+2+".png");
+		//(Math.floor(Math.random() * 2) + 1)
 		function refresh(){
 			var image = new Image();
 			image.src = "./images/landingpage_gif.gif?t="+Math.random();
@@ -17,7 +19,7 @@
 	<meta property="og:title" content="✱" />
 	<meta property="og:url" content="tillmanndoktor.net" />
     <meta property="og:description" content="home_ tillmann doktor" />
-	<meta property="og:image" content="https://tillmanndoktor.net/images/home.png" />
+	<meta property="og:image" id="previmg" content="https://tillmanndoktor.net/images/home_1.png" />
 </head>
 
 <body>
