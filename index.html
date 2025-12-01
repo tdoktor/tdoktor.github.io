@@ -5,11 +5,9 @@
 	<link rel="stylesheet" href="./styles/styles.css">
 	<script src="script.js"></script>
 	<script>
-		document.getElementById('previmg').setAttribute('content', 'https://tillmanndoktor.net/images/home_'+2+".png");
-		//(Math.floor(Math.random() * 2) + 1)
 		function refresh(){
 			var image = new Image();
-			image.src = "./images/landingpage_gif.gif?t="+Math.random();
+			image.src = "./images/landingpage_giff.gif?t="+Math.random();
 			document.getElementById('imagedefault').setAttribute('src', image.src);
 		}
 	</script>
@@ -19,7 +17,7 @@
 	<meta property="og:title" content="✱" />
 	<meta property="og:url" content="tillmanndoktor.net" />
     <meta property="og:description" content="home_ tillmann doktor" />
-	<meta property="og:image" id="previmg" content="https://tillmanndoktor.net/images/home_1.png" />
+	<meta property="og:image" content="https://tillmanndoktor.net/images/home.png" />
 </head>
 
 <body>
@@ -41,7 +39,7 @@
 		<h1 id="title" >home_</h1>
 		<!-- <h2><a href="./portfolio.html" id="link" style="line-height: 1.4px;">NEW PORTFOLIO SECTION!!!</a></h2> -->
 		<br>
-		<img src="./images/landingpage_gif.gif" id="imagedefault" onclick="refresh();"/>
+		<img src="./images/landingpage_giff.gif" id="imagedefault"/>
 
 		<p><br><a id="link" onclick="switchMode();" class="theme-switcher"></a></p>
 		<p><br><a id="link" onclick="switchColor();" class="color-switcher"></a></p>
