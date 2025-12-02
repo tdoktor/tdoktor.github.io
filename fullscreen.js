@@ -3,47 +3,47 @@ const overlay = document.getElementById('fullscreen-overlay');
 const fullscreenImage = document.getElementById('fullscreen-image');
 const fullscreenText = document.getElementById('file-name');
 
-// Array to store image sources for easy cycling
-const imageSources = Array.from(thumbnails).map(img => img.src);
-let currentIndex = -1;  // Keep track of the current image index
+let currentIndex = -1;  // Track which image is open
 
-// When any thumbnail is clicked, open the fullscreen overlay
+// When a thumbnail is clicked fullscreen
 thumbnails.forEach((thumbnail, index) => {
-    thumbnail.parentElement.parentElement.addEventListener('click', function() {
-        currentIndex = index; // Set the current index to the clicked thumbnail
-        fullscreenImage.src = imageSources[currentIndex];  // Set the src of the fullscreen image to the clicked thumbnail
-        fullscreenText.innerHTML = thumbnail.parentElement.parentElement.querySelector('p').innerHTML;
-        overlay.style.display = 'flex';       // Show the overlay
+    thumbnail.closest('.grid-item').addEventListener('click', function () {
+        currentIndex = index;
+        fullscreenImage.src = thumbnail.dataset.full;  // Load full image
+        fullscreenText.textContent = this.querySelector('p').textContent;
+        overlay.style.display = 'flex';
     });
 });
 
-// When pressing the Escape key, close the fullscreen overlay
-document.addEventListener('keydown', function(event) {
+// Escape key closes overlay
+document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
-        overlay.style.display = 'none';  // Hide the overlay
+        overlay.style.display = 'none';
     }
 });
 
-// Close the overlay when clicking outside the image (on the semi-transparent background)
-overlay.addEventListener('click', function(event) {
+// Click outside image closes overlay
+overlay.addEventListener('click', function (event) {
     if (event.target === overlay) {
-        overlay.style.display = 'none';  // Hide the overlay
+        overlay.style.display = 'none';
     }
 });
 
-// Cycle images with Arrow keys
-document.addEventListener('keydown', function(event) {
-    if (overlay.style.display === 'flex') {  // Only respond if overlay is visible
-        if (event.key === 'ArrowRight') {
-            currentIndex = (currentIndex + 1) % imageSources.length;  // Move to next image, wrap around
-            fullscreenImage.src = imageSources[currentIndex];  // Update the image
-            fullscreenText.innerHTML = thumbnails[currentIndex].parentElement.parentElement.querySelector('p').innerHTML;
+// Arrow key navigation
+document.addEventListener('keydown', function (event) {
 
-        } else if (event.key === 'ArrowLeft') {
-            currentIndex = (currentIndex - 1 + imageSources.length) % imageSources.length;  // Move to previous image, wrap around
-            fullscreenImage.src = imageSources[currentIndex];  // Update the image
-            fullscreenText.innerHTML = thumbnails[currentIndex].parentElement.parentElement.querySelector('p').innerHTML;
+    if (overlay.style.display !== 'flex') return;
 
-        }
+    if (event.key === 'ArrowRight') {
+        currentIndex = (currentIndex + 1) % thumbnails.length;
+    } else if (event.key === 'ArrowLeft') {
+        currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
+    } else {
+        return;
     }
+
+    // Get the new thumbnail and apply its FULL image
+    const newThumb = thumbnails[currentIndex];
+    fullscreenImage.src = newThumb.dataset.full;
+    fullscreenText.textContent = newThumb.closest('.grid-item').querySelector('p').textContent;
 });
