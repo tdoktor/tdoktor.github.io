@@ -240,6 +240,10 @@ button:hover{
   border: 3px solid var(--secondary);
 }
 
+.image-wrapper:hover {
+    border: 3px solid var(--accent-color);
+}
+
 .image-wrapper img {
   image-rendering: auto;
   position: absolute;
@@ -251,7 +255,7 @@ button:hover{
 }
 
 .image-wrapper img:hover {
-  object-position: bottom right; 
+  object-position: bottom right;
 }
 
 .grid-item p {
